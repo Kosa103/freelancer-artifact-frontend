@@ -23,9 +23,9 @@ const App = () => {
     notFound,
     login,
     home,
-    params: {
+    /* params: {
       playerId,
-    },
+    }, */
   } = PATHS;
 
   return (
