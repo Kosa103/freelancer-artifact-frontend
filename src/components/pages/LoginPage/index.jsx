@@ -1,7 +1,7 @@
 import React from 'react';
-import './Login.scss';
+import './index.scss';
 
-export const Login = () => {
+export const LoginPage = () => {
     return (
         <div>
             LOGIN    
@@ -9,4 +9,4 @@ export const Login = () => {
     );
 };
 
-export default Login;
+export default LoginPage;

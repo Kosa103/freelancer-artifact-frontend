@@ -1,0 +1,34 @@
+{
+  "common": {
+    "back": "Tillbaka",
+    "country": "Land",
+    "email": "Email",
+    "ok": "Ok",
+    "select": "Välg",
+    "start": "Börja",
+    "year": "År"
+  },
+  "errors": {
+    "acceptTerms": "Du måste acceptera dessa villkor",
+    "emailEmpty": "E-post krävs",
+    "emailInvalid": "Ange en giltig e-postadress",
+    "fieldRequired": "Detta fält är obligatoriskt",
+    "textTooLong": "Texten är för lång"
+  },
+  "apiErrors": {
+    "titleDefault": "Fel",
+    "messageDefault": "Ett okänt fel uppstod. Var god försök igen",
+    "internalServerError": "Internt serverfel"
+  },
+  "error": {
+    "404": {
+      "title": "404",
+      "description": "Sidan du letade efter hittades inte. Klicka på knappen nedan för att gå tillbaka till föregående sida."
+    }
+  },
+  "pages": {
+    "login": {
+      
+    }
+  }
+}

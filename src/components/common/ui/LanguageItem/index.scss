@@ -1,0 +1,29 @@
+.language-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 120px;
+  height: 45px;
+
+  &__code-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+  }
+
+  &__code {
+    text-transform: uppercase;
+  }
+
+  &__flag-container {
+    width: 80px;
+    height: 100%;
+  }
+
+  &__flag {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
