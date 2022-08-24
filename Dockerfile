@@ -5,10 +5,9 @@ WORKDIR /app
 COPY package.json .
 
 RUN npm install -g npm-check
-RUN npm install react-scripts
 
 COPY . .
 
 EXPOSE 7301
 
-CMD ["npm", "build"]
+CMD ["npm", "start"]
