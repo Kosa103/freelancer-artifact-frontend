@@ -4,7 +4,8 @@ WORKDIR /app
 
 COPY package.json .
 
-RUN yarn
+RUN npm install -g npm-check
+RUN npm install react-scripts
 
 COPY . .
 
