@@ -11,4 +11,4 @@ COPY . .
 
 EXPOSE 7301
 
-CMD ["yarn", "start"]
+CMD ["npm", "build"]
