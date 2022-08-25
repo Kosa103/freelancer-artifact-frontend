@@ -4,10 +4,10 @@ WORKDIR /app
 
 COPY package.json .
 
-RUN npm install -g npm-check
+RUN npm install
 
 COPY . .
 
-EXPOSE 7301
+# EXPOSE 7301
 
 CMD ["npm", "start"]
