@@ -4,7 +4,7 @@ import './index.scss';
 export const LoginPage = () => {
     return (
         <div>
-            LOGIN    
+            LOGIN PAGE
         </div>
     );
 };
