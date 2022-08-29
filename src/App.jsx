@@ -16,6 +16,7 @@ import LoadingLayer from './components/common/LoadingLayer';
 import LoginPage from './components/pages/LoginPage';
 import HomePage from './components/pages/HomePage';
 import Error404Page from './components/pages/Error404Page';
+import MenuBar from './components/common/MenuBar';
 
 const App = () => {
   const {
@@ -45,6 +46,7 @@ const App = () => {
             <Route path="*" element={<Navigate replace to={notFound} />} />
           </Routes>
         </Router>
+        <MenuBar />
         <ErrorModal />
         <LoadingLayer />
         <Helper />

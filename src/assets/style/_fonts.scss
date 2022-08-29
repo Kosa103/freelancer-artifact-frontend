@@ -1,2 +1,7 @@
-$font-montserrat: 'Montserrat', sans-serif;
-$font-raleway: 'Raleway', sans-serif;
+@font-face {
+  font-family: AgencyFB;
+  src: url(../fonts/AgencyFB-Bold.ttf);
+}
+
+$font-sans-narrow: "PT Sans Narrow","Helvetica Neue",Helvetica,Arial,sans-serif;
+$font-agency-fb: AgencyFB,sans-serif;

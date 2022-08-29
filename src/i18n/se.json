@@ -4,6 +4,7 @@
     "country": "Land",
     "email": "Email",
     "ok": "Ok",
+    "password": "Lösenord",
     "select": "Välg",
     "start": "Börja",
     "year": "År"
@@ -28,7 +29,8 @@
   },
   "pages": {
     "login": {
-      
+      "login": "Logga in",
+      "title": "Logga in"
     }
   }
 }

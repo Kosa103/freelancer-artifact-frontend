@@ -4,51 +4,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $color-white;
-  background-color: $color-primary-light;
+  color: $color-secondary-light;
+  background-color: $color-primary-dark;
   height: 52px;
   padding: 0 35px;
-  font-size: 16px;
-  border: 2px solid $color-primary-light;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid $color-secondary-light;
   border-radius: 6px;
-  opacity: 1;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 
   &:hover {
     cursor: pointer;
-    opacity: 0.9;
-    transition-duration: 0.3s;
-  }
-
-  &.-black {
-    background-color: $color-black;
-    border-color: $color-black;
-  }
-
-  &.-primary-light {
-    background-color: $color-primary-light;
-    border-color: $color-primary-light;
-  }
-
-  &.-red {
-    background-color: $color-red;
-    border-color: $color-red;
-  }
-
-  &.-green {
-    background-color: $color-green;
-    border-color: $color-green;
-  }
-
-  &.-white-bordered {
-    color: $color-grey-darker;
-    background-color: $color-white;
-    border-color: $color-grey-light;
-
-    &:hover {
-      opacity: 1;
-      background-color: $color-grey-lightest;
-    }
+    color: $color-tertiary;
+    border-color: $color-tertiary;
+    transition-duration: 0.2s;
   }
 
   &.-disabled {

@@ -4,6 +4,7 @@
     "country": "Country",
     "email": "Email",
     "ok": "Ok",
+    "password": "Password",
     "select": "Select",
     "start": "Start",
     "year": "Year"
@@ -28,7 +29,8 @@
   },
   "pages": {
     "login": {
-      
+      "login": "Login",
+      "title": "Login"
     }
   }
 }

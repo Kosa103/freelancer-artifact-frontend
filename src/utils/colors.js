@@ -8,6 +8,7 @@ const colors = {
     secondary: '#2A9FD6',
     secondaryLight: '#82C8E6',
     secondaryDark: '#1C6182',
+    secondaryDarker: '#031B30',
     
     tertiary: '#CDA041',
     
