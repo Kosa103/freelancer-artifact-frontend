@@ -10,7 +10,7 @@ const ProtectedRoute = (props) => {
   const token = getLocalStorage(STORAGE_KEYS.TOKEN) || '';
 
   if (!token) {
-    return <Navigate replace to={`${PATHS.admin}${PATHS.root}`} />;
+    return <Navigate replace to={PATHS.root} />;
   }
 
   return children ? children : <Outlet />;

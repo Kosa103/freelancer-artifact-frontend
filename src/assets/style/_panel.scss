@@ -1,0 +1,8 @@
+@import "./colors";
+
+.panel {
+  background: url('../images/backgrounds/wall.jpg');
+  padding: 20px;
+  border: 1px solid $color-secondary;
+  border-radius: 15px;
+}
