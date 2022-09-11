@@ -20,22 +20,11 @@ export const PATHS = {
   notFound: '/not-found',
   login: '/login',
   home: '/home',
+  players: '/players',
   params: {
     playerId: '/:playerId',
   },
 };
-
-export const UNPROTECTED_PATHS = [
-  PATHS.root,
-  PATHS.notFound,
-  PATHS.register,
-  PATHS.registerSuccess,
-  PATHS.forgotPassword,
-  PATHS.resetPassword,
-  PATHS.resendVerifyMail,
-  PATHS.login,
-  PATHS.privacyPolicy,
-];
 
 export const LANGUAGES = {
   EN: 'en',
@@ -48,4 +37,15 @@ export const DATA_TYPES = {
   NUMBER: 'number',
   ARRAY: 'array',
   OBJECT: 'object',
+};
+
+export const MENU_BAR_ITEMS = {
+  PLAYERS: 'Players',
+};
+
+export const PAGINATOR_OPTIONS = {
+  '5': 5,
+  '10': 10,
+  '20': 20,
+  '50': 50,
 };

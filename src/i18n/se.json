@@ -3,6 +3,7 @@
     "back": "Tillbaka",
     "country": "Land",
     "email": "Email",
+    "menu": "Meny",
     "ok": "Ok",
     "password": "Lösenord",
     "select": "Välg",
@@ -31,6 +32,12 @@
     "login": {
       "login": "Logga in",
       "title": "Logga in"
+    },
+    "home": {
+      "welcomeTo": "Välkommen till"
+    },
+    "players": {
+      "search": "Sök"
     }
   }
 }

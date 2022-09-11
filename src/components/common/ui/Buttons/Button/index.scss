@@ -2,6 +2,7 @@
 
 .button {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   color: $color-secondary-light;
@@ -25,5 +26,15 @@
     pointer-events: none;
     background-color: $color-grey-light;
     border-color: $color-grey-light;
+  }
+
+  &__icon {
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  svg {
+    height: 20px;
+    margin-right: 10px;
   }
 }

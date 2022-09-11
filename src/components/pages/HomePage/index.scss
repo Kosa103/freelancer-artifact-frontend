@@ -1,0 +1,19 @@
+.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  &__message-container {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__welcome-message {
+    font-size: 32px;
+  }
+
+  &__title {
+    font-size: 50px;
+  }
+}

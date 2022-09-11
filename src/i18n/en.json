@@ -3,6 +3,7 @@
     "back": "Back",
     "country": "Country",
     "email": "Email",
+    "menu": "Menu",
     "ok": "Ok",
     "password": "Password",
     "select": "Select",
@@ -31,6 +32,12 @@
     "login": {
       "login": "Login",
       "title": "Login"
+    },
+    "home": {
+      "welcomeTo": "Welcome to"
+    },
+    "players": {
+      "search": "Search"
     }
   }
 }

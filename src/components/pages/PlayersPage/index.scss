@@ -1,0 +1,26 @@
+.players-page {
+  height: 100vh;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100% - 45px);
+    max-width: 1284px;
+    margin: 0 auto;
+    padding: 145px 20px 0;
+    margin-bottom: 45px;
+    overflow: hidden;
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__paginated-list {
+    height: 100%;
+  }
+}

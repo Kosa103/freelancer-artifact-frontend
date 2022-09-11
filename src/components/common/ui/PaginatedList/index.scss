@@ -1,0 +1,39 @@
+@import '../../../../assets/style/colors';
+
+.paginated-list {
+  display: flex;
+  flex-direction: column;
+
+  &__toolbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    .input-text-field__header {
+      display: none;
+    }
+  }
+
+  &__resource-list {
+    max-height: calc(100% - 62px);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-track {
+      background-color: $color-white;
+    }
+  
+    &::-webkit-scrollbar {
+      width: 6px;
+      background-color: $color-secondary-light;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $color-secondary-light;
+      border-radius: 10px;
+    }
+  }
+}
