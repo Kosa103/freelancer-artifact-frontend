@@ -15,6 +15,7 @@ import ErrorModal from './components/common/ErrorModal';
 import LoadingLayer from './components/common/LoadingLayer';
 import LoginPage from './components/pages/LoginPage';
 import HomePage from './components/pages/HomePage';
+import PlayersPage from './components/pages/PlayersPage';
 import Error404Page from './components/pages/Error404Page';
 import MenuBar from './components/common/MenuBar';
 
@@ -24,6 +25,7 @@ const App = () => {
     notFound,
     login,
     home,
+    players,
     /* params: {
       playerId,
     }, */
@@ -41,12 +43,13 @@ const App = () => {
             <Route path={login} exact element={<LoginPage />} />
             <Route element={<ProtectedRoute />}>
               <Route path={home} exact element={<HomePage />} />
+              <Route path={players} exact element={<PlayersPage />} />
             </Route>
             <Route index path={root} exact element={<LoginPage />} />
             <Route path="*" element={<Navigate replace to={notFound} />} />
           </Routes>
+          <MenuBar />
         </Router>
-        <MenuBar />
         <ErrorModal />
         <LoadingLayer />
         <Helper />

@@ -4,10 +4,12 @@ import * as classnames from 'classnames';
 import './index.scss';
 
 const SelectField = props => {
-  const { label, text, className, error, classNamePrefix, id, name, ...other } = props;
+  const {
+    label, text, className, error, classNamePrefix, id, name, ...other
+  } = props;
 
   return (
-    <div className={classnames('select-field', className)}>
+    <div className={classnames('select-field', className && className)}>
       <div className="select-field__top">
         {
           label &&

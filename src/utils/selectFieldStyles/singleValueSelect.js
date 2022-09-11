@@ -3,9 +3,9 @@ import colors from "../colors";
 export const singleValueSelect = {
   option: (provided, state) => ({
     ...provided,
-    borderLeft: `2px solid ${colors.white}`,
+    borderLeft: `2px solid ${colors.primary}`,
     backgroundColor: state.isFocused && 'transparent',
-    color: state.isFocused && colors.black,
+    color: state.isFocused ? colors.secondaryLight : colors.secondary,
     cursor: 'pointer',
     fontSize: '16px',
     textTransform: 'capitalize',
@@ -14,8 +14,8 @@ export const singleValueSelect = {
     textOverflow: 'ellipsis',
 
     '&:hover': {
-      color: colors.primaryLight,
-      borderColor: colors.black,
+      color: colors.tertiary,
+      borderColor: colors.tertiary,
       backgroundColor: 'transparent'
     }
   }),
@@ -26,14 +26,14 @@ export const singleValueSelect = {
   }),
   control: (provided, state) => ({
     ...provided,
-    padding: '10.5px 5px',
-    border: `1.5px solid ${colors.greyLight}`,
+    backgroundColor: colors.primary,
+    padding: '1px 5px',
+    border: `1px solid ${colors.secondary}`,
     borderRadius: '5px',
-    borderColor: colors.greyLighter,
     boxShadow: 'none',
 
     '&:hover': {
-      borderColor: colors.greyLighter,
+      borderColor: colors.tertiary,
       cursor: 'pointer',
     },
 
@@ -43,13 +43,13 @@ export const singleValueSelect = {
   }),
   singleValue: provided => ({
     ...provided,
+    color: colors.secondaryLight,
     fontSize: '16px',
-    color: colors.black,
     textTransform: 'capitalize'
   }),
   menu: provided => ({
     ...provided,
-    backgroundColor: colors.white,
+    backgroundColor: colors.primary,
     margin: '1px 0',
     overflow: 'hidden'
   }),
@@ -64,24 +64,24 @@ export const singleValueSelect = {
   }),
   clearIndicator: provided => ({
     ...provided,
-    color: colors.black,
+    color: colors.secondary,
     padding: '8px 5px',
 
     '&:hover': {
-      color: colors.primaryLight,
+      color: colors.tertiary,
       cursor: 'pointer'
     }
   }),
   dropdownIndicator: (provided, { selectProps: { menuIsOpen } }) => ({
     ...provided,
-    color: colors.black,
+    color: colors.secondary,
     transform: menuIsOpen && 'rotate(180deg)',
     padding: '8px 5px',
     '& svg path': {
-      fill: menuIsOpen && colors.primaryLight,
+      fill: menuIsOpen && colors.tertiary,
     },
     '&:hover': {
-      color: colors.primaryLight,
+      color: colors.tertiary,
       cursor: 'pointer'
     }
   })

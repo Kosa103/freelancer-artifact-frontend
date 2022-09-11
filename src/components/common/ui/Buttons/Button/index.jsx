@@ -5,6 +5,8 @@ import './index.scss';
 const Button = (props) => {
 	const {
 		label = '',
+    icon,
+    iconHtml,
 		type = 'button',
 		className = '',
 		handleClick = () => { },
@@ -22,6 +24,14 @@ const Button = (props) => {
 			onClick={handleClick}
 			disabled={disabled}
 		>
+      {icon && (
+        <img
+          className="button__icon"
+          src={icon}
+          alt="icon"
+        />
+      )}
+      {iconHtml && iconHtml}
 			{label}
 		</button>
 	)

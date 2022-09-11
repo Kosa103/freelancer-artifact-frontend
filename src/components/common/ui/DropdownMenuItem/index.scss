@@ -1,0 +1,21 @@
+@import "../../../../assets/style/colors";
+
+.dropdown-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-transform: uppercase;
+  transition-duration: 0.2s;
+  margin: 0 10px;
+
+  &:not(:last-child) {
+    border-bottom: 2px solid $color-secondary;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $color-tertiary;
+    transition-duration: 0.2s;
+  }
+}

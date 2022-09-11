@@ -1,0 +1,63 @@
+@import '../../../../assets/style/colors';
+
+.pagination-control {
+  display: flex;
+  flex-direction: row;
+
+  &__select-field {
+    margin-right: 20px;
+
+    .select-field__top {
+      display: none;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  &__button-stepper {
+    height: 41px;
+    border: 1px solid $color-secondary;
+    padding: 0 12px;
+
+    &.-disabled {
+      background: $color-primary-light;
+      border-color: $color-secondary-light;
+    }
+
+    svg {
+      margin: 0;
+      transition-duration: 0.2s;
+    }
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      svg {
+        fill: $color-tertiary;
+        transition-duration: 0.2s;
+      }
+    }
+  }
+
+  &__button-page {
+    color: $color-secondary;
+    height: 41px;
+    border: 1px solid $color-secondary;
+    padding: 0 17px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &.-current {
+      color: $color-secondary-light;
+      background: $color-primary;
+    }
+  }
+}
