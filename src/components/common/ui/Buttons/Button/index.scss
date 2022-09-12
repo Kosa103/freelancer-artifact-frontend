@@ -24,8 +24,9 @@
 
   &.-disabled {
     pointer-events: none;
-    background-color: $color-grey-light;
-    border-color: $color-grey-light;
+    color: $color-secondary-light;
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
   }
 
   &__icon {

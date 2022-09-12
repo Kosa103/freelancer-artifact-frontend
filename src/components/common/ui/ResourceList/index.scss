@@ -20,8 +20,8 @@
 
     &:hover {
       cursor: pointer;
-      background: $color-primary;
       color: $color-tertiary;
+      background: $color-primary;
       transition-duration: 0.1s;
     }
 
@@ -30,6 +30,14 @@
       border-bottom-width: 3px;
       text-transform: uppercase;
       pointer-events: none;
+    }
+
+    &.-no-navigate {
+      &:hover {
+        pointer-events: none;
+        color: $color-secondary-light;
+        background: $color-primary-dark;
+      }
     }
   }
 

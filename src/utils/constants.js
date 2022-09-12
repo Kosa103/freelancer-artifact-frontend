@@ -23,6 +23,7 @@ export const PATHS = {
   players: '/players',
   params: {
     playerId: '/:playerId',
+    playerTabName: '/:playerTabName',
   },
 };
 
@@ -48,4 +49,10 @@ export const PAGINATOR_OPTIONS = {
   '10': 10,
   '20': 20,
   '50': 50,
+};
+
+export const PLAYER_PAGE_TABS = {
+  GENERAL: 'general',
+  HISTORY: 'history',
+  HEAT_MAP: 'heat-map',
 };

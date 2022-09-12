@@ -16,6 +16,7 @@ import LoadingLayer from './components/common/LoadingLayer';
 import LoginPage from './components/pages/LoginPage';
 import HomePage from './components/pages/HomePage';
 import PlayersPage from './components/pages/PlayersPage';
+import PlayerPage from './components/pages/PlayerPage';
 import Error404Page from './components/pages/Error404Page';
 import MenuBar from './components/common/MenuBar';
 
@@ -26,9 +27,10 @@ const App = () => {
     login,
     home,
     players,
-    /* params: {
+    params: {
       playerId,
-    }, */
+      playerTabName,
+    },
   } = PATHS;
 
   return (
@@ -44,6 +46,7 @@ const App = () => {
             <Route element={<ProtectedRoute />}>
               <Route path={home} exact element={<HomePage />} />
               <Route path={players} exact element={<PlayersPage />} />
+              <Route path={`${players}${playerId}${playerTabName}`} exact element={<PlayerPage />} />
             </Route>
             <Route index path={root} exact element={<LoginPage />} />
             <Route path="*" element={<Navigate replace to={notFound} />} />

@@ -3,9 +3,14 @@
     "back": "Tillbaka",
     "country": "Land",
     "email": "Email",
+    "id": "Id",
     "menu": "Meny",
+    "name": "Namn",
+    "noResult": "Inga resultat",
     "ok": "Ok",
     "password": "Lösenord",
+    "save": "Spara",
+    "search": "Sök",
     "select": "Välg",
     "start": "Börja",
     "year": "År"
@@ -15,7 +20,10 @@
     "emailEmpty": "E-post krävs",
     "emailInvalid": "Ange en giltig e-postadress",
     "fieldRequired": "Detta fält är obligatoriskt",
-    "textTooLong": "Texten är för lång"
+    "mustBeWhole": "Måste vara ett heltal",
+    "textTooLong": "Texten är för lång",
+    "tooHigh": "Värdet är för högt",
+    "tooLow": "Värdet är för lågt"
   },
   "apiErrors": {
     "titleDefault": "Fel",
@@ -36,8 +44,13 @@
     "home": {
       "welcomeTo": "Välkommen till"
     },
-    "players": {
-      "search": "Sök"
+    "player": {
+      "description": "Beskrivning",
+      "general": "Allmän",
+      "heatMap": "Värmekarta",
+      "history": "Historia",
+      "level": "Nivå",
+      "updatedAt": "Uppdaterad kl"
     }
   }
 }
