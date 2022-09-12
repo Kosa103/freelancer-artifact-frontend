@@ -1,4 +1,5 @@
 import React from 'react';
+import { useIntl } from 'react-intl';
 import * as classnames from 'classnames';
 import './index.scss';
 
@@ -6,7 +7,10 @@ const ResourceList = props => {
   const {
     className,
     resourceList,
+    rowNavigateTo,
   } = props;
+
+  const intl = useIntl();
 
   return (
     <>
@@ -31,7 +35,11 @@ const ResourceList = props => {
           {resourceList.map((resource, i) => (
             <div
               key={i}
-              className="resource-list__row"
+              className={classnames(
+                'resource-list__row',
+                !rowNavigateTo && '-no-navigate',
+              )}
+              onClick={() => rowNavigateTo ? rowNavigateTo(resource.id) : null}
             >
               {Object.keys(resource).map((key, i) => (
                 <div
@@ -46,7 +54,7 @@ const ResourceList = props => {
           ))}
         </div>
       ) : (
-        null
+        <h3>{intl.messages.common?.noResult}</h3>
       )}
     </>
   );

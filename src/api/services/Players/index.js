@@ -11,6 +11,14 @@ export const getPlayers = async (query={}) => {
   return response;
 };
 
+export const getPlayer = async (playerId) => {
+  const response = await protectedHttp.get(
+    `${API_URL}/${Paths.Players.players}/${playerId}`,
+  );
+
+  return response;
+};
+
 export const getPlayersOnline = async () => {
   const response = await protectedHttp.get(
     `${API_URL}/${Paths.Players.playersOnline}`,

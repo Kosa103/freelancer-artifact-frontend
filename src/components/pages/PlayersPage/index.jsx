@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useIntl } from 'react-intl';
 import { AppContext } from '../../../storage/context';
 import { REDUCER_TYPES } from '../../../storage/reducers/utils';
+import { PATHS, PLAYER_PAGE_TABS } from '../../../utils/constants';
 import { debounce, showLoadingLayer, hideLoadingLayer } from '../../../utils/helpers';
 import { PaginatedList } from '../../common/ui/PaginatedList';
 import { getPlayers } from '../../../api/services/Players';
@@ -12,6 +14,7 @@ const PlayersPage = () => {
   const [playersList, setPlayersList] = React.useState([]);
   const [playerCount, setPlayerCount] = React.useState(0);
 
+  const navigate = useNavigate();
   const intl = useIntl();
 
   const fetchPlayers = async (query) => {
@@ -66,6 +69,7 @@ const PlayersPage = () => {
             resourceCount={playerCount}
             fetchResources={fetchPlayers}
             debouncedFetchResources={debouncedFetchPlayers}
+            rowNavigateTo={(itemId) => navigate(`${PATHS.players}/${itemId}/${PLAYER_PAGE_TABS.GENERAL}`)}
           />
         </div>
       </div>

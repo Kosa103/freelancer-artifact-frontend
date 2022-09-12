@@ -3,9 +3,14 @@
     "back": "Back",
     "country": "Country",
     "email": "Email",
+    "id": "Id",
     "menu": "Menu",
+    "name": "Name",
+    "noResult": "No result found",
     "ok": "Ok",
     "password": "Password",
+    "save": "Save",
+    "search": "Search",
     "select": "Select",
     "start": "Start",
     "year": "Year"
@@ -15,7 +20,10 @@
     "emailEmpty": "Email is empty",
     "emailInvalid": "Please enter a valid email address",
     "fieldRequired": "This field is required",
-    "textTooLong": "Text is too long"
+    "mustBeWhole": "Must be a whole number",
+    "textTooLong": "Text is too long",
+    "tooHigh": "Value is too high",
+    "tooLow": "Value is too low"
   },
   "apiErrors": {
     "titleDefault": "Error",
@@ -36,8 +44,13 @@
     "home": {
       "welcomeTo": "Welcome to"
     },
-    "players": {
-      "search": "Search"
+    "player": {
+      "description": "Description",
+      "general": "General",
+      "heatMap": "Heat Map",
+      "history": "History",
+      "level": "Level",
+      "updatedAt": "Updated At"
     }
   }
 }

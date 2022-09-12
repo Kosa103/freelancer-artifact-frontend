@@ -18,26 +18,35 @@ export const PaginatedList = props => {
     resourceList,
     resourceCount,
     fetchResources,
+    noSearch,
     debouncedFetchResources,
+    ...rest
   } = props;
 
   const intl = useIntl();
 
   React.useEffect(() => {
-    debouncedFetchResources({
-      search,
-      limit: paginateLimit,
-      start: paginateStart,
-    });
+    if (!noSearch) {
+      debouncedFetchResources({
+        search,
+        limit: paginateLimit,
+        start: paginateStart,
+      });
+    }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]);
 
   React.useEffect(() => {
-    fetchResources({
-      search,
+    const query = {
       limit: paginateLimit,
       start: paginateStart,
-    })
+    };
+
+    if (!noSearch) {
+      query.search = search;
+    }
+
+    fetchResources(query);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [paginateLimit, paginateStart]);
 
@@ -46,15 +55,22 @@ export const PaginatedList = props => {
       'paginated-list',
       className && className,
     )}>
-      <div className="paginated-list__toolbar">
-        <div className="paginated-list__search-container">
-          <InputTextField
-            className="paginated-list__input"
-            placeholder={intl.messages.pages?.players.search}
-            name="search"
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div>
+      <div
+        className={classnames(
+          'paginated-list__toolbar',
+          noSearch && '-no-search',
+        )}
+      >
+        {!noSearch && (
+          <div className="paginated-list__search-container">
+            <InputTextField
+              className="paginated-list__input"
+              placeholder={intl.messages.common?.search}
+              name="search"
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
+        )}
         <PaginationControl
           className="paginated-list__pagination-control"
           resourceCount={resourceCount}
@@ -69,6 +85,7 @@ export const PaginatedList = props => {
       <ResourceList
         className="paginated-list__resource-list"
         resourceList={resourceList}
+        {...rest}
       />
     </div>
   );
